@@ -1,6 +1,6 @@
-import costumerFinal from './pages/final costumer/finalCostumer.js';
-import teamRaizen from './pages/teamRaizen/teamRaizen.js';
-import searchCNPJ from './pages/SearchCNPJ/search.js';
+import costumerFinal from './pages/finalCostumer/finalCostumer.js';
+// import teamRaizen from './pages/teamRaizen/teamRaizen.js';
+// import searchCNPJ from './pages/SearchCNPJ/search.js';
 
 const main = document.querySelector('#root');
 
@@ -17,7 +17,6 @@ const routes = () => {
         case '#searchCNPJ':
         main.appendChild(searchCNPJ());
         break;
-        default:
     }
   });
 };
