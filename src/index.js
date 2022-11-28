@@ -1,4 +1,4 @@
-import costumerFinal from './pages/finalcostumer/finalCostumer.js';
+import costumerFinal from './pages/final costumer/finalCostumer.js';
 import teamRaizen from './pages/teamRaizen/teamRaizen.js';
 import searchCNPJ from './pages/SearchCNPJ/search.js';
 
