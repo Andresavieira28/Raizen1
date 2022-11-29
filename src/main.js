@@ -1,3 +1,5 @@
+import loginRaizen from './pages/teamRaizen/loginRaizen.js';
+import teamRaizen from './pages/teamRaizen/teamRaizen.js';
 import finalCostumer from './pages/finalCostumer/finalCostumer.js';
 import searchCompany from './pages/searchCompany/searchCompany.js';
 
@@ -16,10 +18,15 @@ const routes = () => {
       case '#teamRaizen':
         main.appendChild(teamRaizen());
         break;
+      case '#loginRaizen':
+        main.appendChild(loginRaizen());
+        break;
+
+
     }
   });
 };
 window.addEventListener('load', () => {
-  window.location.hash = '';
+  // window.location.hash = '';
   routes();
 });

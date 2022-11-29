@@ -1,5 +1,5 @@
-export default [
-    {
+export default {
+    "users":[{
         "user": "cs250993",
         "password": "raizen22"
     },
@@ -7,4 +7,4 @@ export default [
         "user": "cs120293",
         "password": "raizen22"
     }
-]
+]};
