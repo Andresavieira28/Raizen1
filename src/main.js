@@ -1,6 +1,7 @@
-// import costumerFinal from './pages/final costumer/finalCostumer.js';
+
 import loginRaizen from './pages/teamRaizen/loginRaizen.js';
 import teamRaizen from './pages/teamRaizen/teamRaizen.js';
+import finalCostumer from './pages/finalCostumer/finalCostumer.js';
 // import searchCNPJ from './pages/SearchCNPJ/search.js';
 
 const main = document.querySelector('#root');
@@ -9,8 +10,8 @@ const routes = () => {
   window.addEventListener('hashchange', () => {
     main.innerHTML = '';
     switch (window.location.hash) {
-      case '#costumerFinal':
-        main.appendChild(costumerFinal());
+      case '#finalCostumer':
+        main.appendChild(finalCostumer());
         break;
       case '#teamRaizen':
         main.appendChild(teamRaizen());
@@ -21,6 +22,7 @@ const routes = () => {
       case '#loginRaizen':
         main.appendChild(loginRaizen());
         break;
+
     }
   });
 };

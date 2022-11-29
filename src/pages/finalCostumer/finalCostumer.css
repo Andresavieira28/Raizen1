@@ -1,0 +1,5 @@
+.logoCostumer img{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
