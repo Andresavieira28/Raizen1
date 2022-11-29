@@ -1,0 +1,51 @@
+.loginRaizen{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+#total{
+    /* border: 2px solid yellow; */
+    box-shadow: 0 1px 5px  var(--cinza-raizen);
+    border-radius: 10px;
+}
+#logoLogin{
+    margin: 2rem 0 0 2rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    padding: 0 3rem 3rem 3rem ;
+    gap:1.5rem;
+
+}
+
+
+
+.inputLogin{
+    width: 27.2rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+#btn{
+    height: 5rem;
+    width: 27.3rem;
+    background:var(--magenta-raizen);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+#error{
+    font-size: 1.5rem ;
+    color: var(--magenta-raizen);
+    text-align: center;
+}
