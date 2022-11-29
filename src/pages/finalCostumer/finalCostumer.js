@@ -38,3 +38,6 @@ function createCard(products) {
     });
     return arrayProduct.join("");
 }
+
+
+

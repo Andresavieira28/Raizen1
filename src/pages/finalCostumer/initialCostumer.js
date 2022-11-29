@@ -14,6 +14,7 @@ export default () => {
     <section class="info-lote">
         <input class="input-lote" id="lote-sugar" type="text" placeholder="Digite o número do Lote">
         <button id="btn-lote">PESQUISAR</button>
+        <p id="error"></p>
     </section>
     </section>`;
 
@@ -21,7 +22,17 @@ export default () => {
 
     const inputLote = initialPage.querySelector('#lote-sugar');
     const btnSearch = initialPage.querySelector('#btn-lote');
-    btnSearch.addEventListener('click', getLote(products, inputLote.value));
+    //const errorLote = initialPage.querySelector('#error');
+    //btnSearch.addEventListener('click', getLote(products, inputLote.value));
+    btnSearch.addEventListener('click', () => {
+        getLote(products, inputLote.value)
+        window.location.hash = '#finalCostumer';
+        let thisPage = new URL(window.location.href);
+        thisPage.searchParams.append('yourKey', 'someValue');
+        console.log(thisPage);
+    });
+
+
 
     return initialPage;
 }
@@ -30,4 +41,3 @@ function getLote(products, lote) {
     const arrayLote = products.filter((product) => product.lote === lote);
     return arrayLote;
 }
-
