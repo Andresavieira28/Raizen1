@@ -1,6 +1,7 @@
-import costumerFinal from './pages/final costumer/finalCostumer.js';
+// import costumerFinal from './pages/final costumer/finalCostumer.js';
+import loginRaizen from './pages/teamRaizen/loginRaizen.js';
 import teamRaizen from './pages/teamRaizen/teamRaizen.js';
-import searchCNPJ from './pages/SearchCNPJ/search.js';
+// import searchCNPJ from './pages/SearchCNPJ/search.js';
 
 const main = document.querySelector('#root');
 
@@ -14,14 +15,16 @@ const routes = () => {
       case '#teamRaizen':
         main.appendChild(teamRaizen());
         break;
-        case '#searchCNPJ':
+      case '#searchCNPJ':
         main.appendChild(searchCNPJ());
         break;
-        default:
+      case '#loginRaizen':
+        main.appendChild(loginRaizen());
+        break;
     }
   });
 };
 window.addEventListener('load', () => {
-  window.location.hash = '';
+  // window.location.hash = '';
   routes();
 });
