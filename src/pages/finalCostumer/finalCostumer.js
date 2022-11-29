@@ -20,6 +20,7 @@ export default () => {
     createScreen.innerHTML = templateScreen;
     return createScreen;
 }
+
 function createCard(products) {
     const arrayProduct = products.map((product) => {
         const template = `
