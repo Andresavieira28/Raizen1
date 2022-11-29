@@ -1,5 +1,5 @@
 export default {
-    "products":[
+    "products": [
     {
         "image": "https://imagens.gimba.com.br/objetosmidia/ExibirObjetoMidia?Id=120513",
         "origin": "Minas Gerais",
@@ -14,5 +14,4 @@ export default {
         "traceability": "Boa vaigem, Colíder-MT",
         "certification": "https://www.snetor.com/wp-content/uploads/2021/03/ISCC_Logo.png",  
     },
-    
 ]}

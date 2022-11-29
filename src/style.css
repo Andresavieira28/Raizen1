@@ -1,1 +1,6 @@
-@import url(../src/pages/finalCostumer/finalCostumer.css);
+:root {
+    --roxo-raizen: #781e77;
+    --cinza-raizen: #666666;
+    --branco: #ffffff;
+    --preto: #000000;
+}

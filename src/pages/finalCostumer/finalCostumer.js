@@ -5,8 +5,8 @@ const products = data.products;
 export default () => {
     const createScreen = document.createElement('section');
     const templateScreen = `
-    <section class='screenCostumer'>
-        <header class ='sectionLogo'>
+    <section>
+        <header>
             <img src='img/logoRaízen.png' class='logoCostumer' alt='Logo Raízen'>
         </header>
         <section>
@@ -27,9 +27,10 @@ function createCard(products) {
              <strong>Origem:</strong> ${product.origin}</br>
              <strong>Fazenda:</strong> ${product.farm}</br>
              <strong>Rastreabilidade:</strong> ${product.traceability}</br>
-             <img class="product-img" src="${product.certification}" alt="açúcar"></br>
+             <img class="product-img" src="${product.certification}" alt="Certificado">
          </section>
      `;
+
         return template;
     });
     return arrayProduct.join("");
