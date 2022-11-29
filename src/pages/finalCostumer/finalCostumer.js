@@ -27,7 +27,7 @@ function createCard(products) {
              <strong>Origem:</strong> ${product.origin}</br>
              <strong>Fazenda:</strong> ${product.farm}</br>
              <strong>Rastreabilidade:</strong> ${product.traceability}</br>
-             <strong>Certificação:</strong> ${product.certification}
+             <img class="product-img" src="${product.certification}" alt="Certificado">
          </section>
      `;
 
@@ -35,11 +35,3 @@ function createCard(products) {
     });
     return arrayProduct.join("");
 }
-
-
-
-
-
-
-
-
