@@ -1,5 +1,19 @@
-.logoCostumer img{
+* {
+    margin: 0;
+    padding: 0;
+}
+.sectionLogo{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: green;
+}
+.logoCostumer img{ 
     display: flex;
     justify-content: flex-start;
-    width: 50%;
+    width: 20%;
+    height: 20%;
+}
+.product-img img{
+    width: 10%;
 }

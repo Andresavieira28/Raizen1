@@ -1,4 +1,4 @@
-import costumerFinal from './pages/finalCostumer/finalCostumer.js';
+import finalCostumer from './pages/finalCostumer/finalCostumer.js';
 // import teamRaizen from './pages/teamRaizen/teamRaizen.js';
 // import searchCNPJ from './pages/SearchCNPJ/search.js';
 
@@ -8,8 +8,8 @@ const routes = () => {
   window.addEventListener('hashchange', () => {
     main.innerHTML = '';
     switch (window.location.hash) {
-      case '#costumerFinal':
-        main.appendChild(costumerFinal());
+      case '#finalCostumer':
+        main.appendChild(finalCostumer());
         break;
       case '#teamRaizen':
         main.appendChild(teamRaizen());
