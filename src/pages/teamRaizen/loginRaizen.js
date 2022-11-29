@@ -5,16 +5,23 @@ export default () => {
     const users = data.users;
     const container = document.createElement('div');
     const template = `
+      <header class="headerDesktop">
+        <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
+        <nav class='navDesktop'>
+          <ul class='ulNavDesktop'>
+            <li><a href='#loginRaizen'> EQUIPE RAÍZEN </a></li>
+            <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
+          </ul>
+        </nav>
+        </header>
       <main class="loginRaizen">
-        <div id="total">
-          <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
-          <form id="form">
-            <input class="inputLogin" id="inputUser" type="text" placeholder="USUÁRIO"></input>
-            <input class="inputLogin" id="inputPassword" type="password" placeholder="SENHA"></input>
-            <button class="inputLogin" id="btn" type="button">ENTRAR</button>
-            <p id="error"></p>
-          </form>
-        </div>
+        <form id="form">
+          <input class="inputLogin" id="inputUser" type="text" placeholder="USUÁRIO"></input>
+          <input class="inputLogin" id="inputPassword" type="password" placeholder="SENHA"></input>
+          <button class="inputLogin" id="btn" type="button">ENTRAR</button>
+          <p id="error"></p>
+        </form>
+        <img id="banner" src="https://www.energiaquefalacomvoce.com.br/wp-content/uploads/2020/11/cana_de_acucar-696x441.jpg" alt="banner">
       </main>
     `;
     container.innerHTML = template;
