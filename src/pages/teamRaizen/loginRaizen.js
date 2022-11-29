@@ -3,19 +3,18 @@ import data from '../../data/users.js'
 
 export default () => {
     const users = data.users;
-    console.log(users);
     const container = document.createElement('div');
     const template = `
-      <header>
-        <p>header</p>
-      </header>
-      <main>
-        <form id="form">
-          <input id="inputUser" type="text" placeholder="USER"></input>
-          <input id="inputPassword" type="password" placeholder="PASSWORD"></input>
-          <button id="btn" type="button">ENTRAR</button>
-          <p id="error"></p>
-        </form>
+      <main class="loginRaizen">
+        <div id="total">
+          <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
+          <form id="form">
+            <input class="inputLogin" id="inputUser" type="text" placeholder="USUÁRIO"></input>
+            <input class="inputLogin" id="inputPassword" type="password" placeholder="SENHA"></input>
+            <button class="inputLogin" id="btn" type="button">ENTRAR</button>
+            <p id="error"></p>
+          </form>
+        </div>
       </main>
     `;
     container.innerHTML = template;
@@ -25,7 +24,8 @@ export default () => {
     const btn = container.querySelector('#btn');
     const error = container.querySelector('#error');
     let auth = false;
-    console.log(auth)
+    console.log(auth);
+
     btn.addEventListener('click', ()=>{
       users.forEach(user => {
         if(inputUser.value === user.user && inputPassword.value === user.password){

@@ -3,4 +3,14 @@
     --cinza-raizen: #666666;
     --branco: #ffffff;
     --preto: #000000;
+    --azul-raizen: #1FC0DA;
+    --laranja-raizen: #F47920;
+    --magenta-raizen: #ea368e;
+    --amarelo-raizen: #FDB515;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
