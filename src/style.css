@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
 :root {
     --roxo-raizen: #781e77;
     --cinza-raizen: #666666;
     --branco: #ffffff;
     --preto: #000000;
+    --font-raizen: 'Nunito', sans-serif;
 }
+
