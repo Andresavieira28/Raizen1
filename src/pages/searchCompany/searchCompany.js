@@ -6,17 +6,23 @@ export default () => {
     const screen = document.createElement('section');
     const templateScreen = `
     <section>
-        <header>
-            <img src='img/logoRaízen.png' class='logoCostumer' alt='Logo Raízen'>
-        </header>
-    </section>
-    <input type="text" placeholder="Digite seu CNPJ" id="input-cnpj"></input>
-      <button id="btn-search" class="search-btn">Buscar por CNPJ</button>
-      <input type="text" placeholder="Digite sa data desejada" id="input-data"></input>
-      <div id='query-template'> 
+    <header class="headerDesktop">
+      <div class="headerOut">
+        <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
       </div>
+      <nav class='navDesktop'>
+        <ul class='ulNavDesktop'>
+          <div class="liBoxDesktop">
+          <input type="text" placeholder="Digite seu CNPJ" id="input-cnpj"></input>
+          <input type="text" placeholder="Digite mês e ano 02/2012" id="input-data"></input>
+          <button id="btn-search" class="search-btn">Buscar por CNPJ</button>
+          <li><a href='#loginRaizen'> INÍCIO </a></li>
+          <li><a href='#teamRaizen'> EQUIPE RAÍZEN </a></li>
+        </header>
+        <div id="query-template">
+        </div>
+    </section>
     `;
-
     screen.innerHTML = templateScreen;
 
     const inputData = screen.querySelector("#input-data");
@@ -24,37 +30,51 @@ export default () => {
     const inputCnpj = screen.querySelector("#input-cnpj");
     const printElement = screen.querySelector('#query-template')
     btnSearch.addEventListener('click', () => {
-        const filterResultData = filterData(companies, inputData.value )
-        const filterCnpj = filterInfo(filterResultData, inputCnpj.value)
-        printElement.innerHTML = createCard(filterCnpj);
+        if (inputCnpj.value && inputData.value) {
+            const filterCnpj = filterInfo(companies, inputCnpj.value)
+            const filterResultData = filterData(filterCnpj, inputData.value)
+            printElement.innerHTML = createCard(filterResultData);
+        } else if (inputCnpj.value) {
+            const filterCnpj = filterInfo(companies, inputCnpj.value)
+            printElement.innerHTML = createCard(filterCnpj);
+        }
     })
-
     return screen;
 }
-
 function createCard(filterCnpj) {
     const companiesArray = filterCnpj.map((infos) => {
         const template = `
          <section>
-            <strong>CNPJ:</strong> ${infos.empresa}</br>
-             <strong>Lote:</strong> ${infos.lote}</br>
-             <strong>Localização:</strong> ${infos.localização}</br>
-             <strong>Procedência:</strong> ${infos.procedência}</br>
-             <strong>Açúcar:</strong> ${infos.açúcar}</br>
-             <strong>Data de Venda:</strong> ${infos.dataEntrega}</br>
+         <section class="table">
+            <table>
+            <tr>
+                <td><strong>CNPJ:</strong></td>
+                <td><strong>Lote:</strong></td>
+                <td><strong>Localização:</strong></td>
+                <td><strong>Procedência:</strong></td>
+                <td><strong>Tipo de Açúcar:</strong></td>
+                <td><strong>Data de Venda:</strong></td>
+                </tr>
+            <tr>
+                <td>${infos.empresa}</td>
+                <td>${infos.lote}</td>
+                <td>${infos.localização}</td>
+                <td>${infos.procedência}</td>
+                <td>${infos.açúcar}</td>
+                <td>${infos.data}</td>
+            </tr>
+            </table>
+            </section>
          </section>
      `;
-
         return template;
     });
     return companiesArray.join("");
 }
-
 function filterInfo(companies, cnpj,) {
     const arrayInfo = companies.filter((infos) => infos.cnpj === cnpj);
     return arrayInfo;
 }
- 
 function filterData(companies, data,) {
     const arrayData = companies.filter((infos) => infos.data === data);
     return arrayData;
