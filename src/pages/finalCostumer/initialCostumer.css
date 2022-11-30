@@ -1,44 +1,73 @@
-@media only screen and (max-width: 480px) and (min-width: 100px) {
-    .bodyFinalCostumer{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-    }
-    .headerFinalCostumer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: flex-start;
-        margin: 0% 0% 15% 0%;
-    }
-    .logoCostumer{
-        width: 150px;
-    }
-    .linha-horizontal{
-        width: 320px;
-        border: 0.5px solid rgba(128, 128, 128, 0.16);
-    }
-    .list-Products{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        margin: 0% 5% 0% 5%;
-    }
-    .sectionCard{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-        margin: 0% 0% 3% 0%;
-    }
-    .product-img{
-        width: 100px;
-    }
-    .certification-img{
-        width: 70px;
-    }
-    .textCard{
-        font-size: 12px;
-    }
+.imgBoasvindas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../img/plantio.png);
+    padding: 4% 0% 2% 0%;
+    margin-bottom: 2%;
+}
+.textoBoasVindas{
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+}
+.info-lote{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.input-lote{
+    border-color: var(--roxo-raizen);
+    font-size: 15px;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+.btn-search-lote{
+    background:var(--roxo-raizen);
+    font-size: 15px;
+    color: var(--branco);
+    border-radius: 10px;
+    border-color: var(--roxo-raizen);
+    width: 20%;
+    height: 50px;
+}
+.btn-search-lote:hover{
+    transform: scale(0.9);
+}
+.sectionCard{
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0% 2% 0%;
+    font: var(--font-raizen);
+    font-size: 16px;
+}
+.product-img{
+    width: 300px;
+}
+.infoProducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionsustainability{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 0% 1% 0%;
+}
+.sectionCertification{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1% 0% 1% 0%;
+}
+.sectionOrigin{
+    margin-bottom: 2%;
+}
+.certification-img{
+    width: 80px;
+    padding: 5px;
 }

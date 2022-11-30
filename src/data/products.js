@@ -9,11 +9,12 @@ export default {
         "farm2": "Sitio Paralcool - Prédio 1",
         "sustainability": "Controle de emissão de fumaça preta",
         "sustainability2": "Diminuição do consumo de agroquímicos.",
+        "sustainability3": "Boa gestão de resíduos",
         "traceability": "CURRALINHO, Santana de Pirapama - MG",
         "traceability2": "Paraguaçu Paulista - SP",
         "certification": "https://bonsucro.com/wp-content/themes/bonsucro/images/logo.jpg",
         "certification2": "https://s3-sa-east-1.amazonaws.com/raizen-prod/items-images/item-437-item-327-item-159-item-42-iso-17025-2.png",
-        "geolocation": "https://www.google.com.br/maps/place/22%C2%B033'58.1%22S+50%C2%B039'12.3%22W/@-22.5661362,-50.655612,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x20b7858a8aa5e61e!8m2!3d-22.5661412!4d-50.6534233",
+        "geolocation": "https://www.google.com/maps/place/Fazenda+Geraldini/@-22.6454086,-47.7393894,10869m/data=!3m1!1e3!4m9!1m2!2m1!1sfazenda!3m5!1s0x94c635899561df33:0x41018d6f624153d4!8m2!3d-22.6438909!4d-47.7115863!15sCgdmYXplbmRhkgEIcGlnX2Zhcm3gAQA",
         "geolocation2": "https://www.google.com.br/maps/place/Ra%C3%ADzen+-+Bioparque+Paragua%C3%A7u/@-22.4630752,-50.4967557,17z/data=!4m13!1m7!3m6!1s0x0:0xeab67ccdaa5a62f7!2zMjLCsDI3JzQ3LjEiUyA1MMKwMjknNDAuNCJX!3b1!8m2!3d-22.4630802!4d-50.494567!3m4!1s0x949504c7af3d079d:0x3afd4999887970a0!8m2!3d-22.4641878!4d-50.4944633",
     },
     {
