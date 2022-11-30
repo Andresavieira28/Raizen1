@@ -24,7 +24,7 @@ export default () => {
     const inputCnpj = screen.querySelector("#input-cnpj");
     const printElement = screen.querySelector('#query-template')
     btnSearch.addEventListener('click', () => {
-        const filterResultData = filterData(companies, inputData.value)
+        const filterResultData = filterData(companies, inputData.value )
         const filterCnpj = filterInfo(filterResultData, inputCnpj.value)
         printElement.innerHTML = createCard(filterCnpj);
     })
@@ -41,7 +41,7 @@ function createCard(filterCnpj) {
              <strong>Localização:</strong> ${infos.localização}</br>
              <strong>Procedência:</strong> ${infos.procedência}</br>
              <strong>Açúcar:</strong> ${infos.açúcar}</br>
-             <strong>Data de Venda:</strong> ${infos.data}</br>
+             <strong>Data de Venda:</strong> ${infos.dataEntrega}</br>
          </section>
      `;
 
