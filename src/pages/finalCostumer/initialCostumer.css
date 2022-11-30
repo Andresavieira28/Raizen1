@@ -1,0 +1,44 @@
+@media only screen and (max-width: 480px) and (min-width: 100px) {
+    .bodyFinalCostumer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .headerFinalCostumer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        margin: 0% 0% 15% 0%;
+    }
+    .logoCostumer{
+        width: 150px;
+    }
+    .linha-horizontal{
+        width: 320px;
+        border: 0.5px solid rgba(128, 128, 128, 0.16);
+    }
+    .list-Products{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0% 5% 0% 5%;
+    }
+    .sectionCard{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        margin: 0% 0% 3% 0%;
+    }
+    .product-img{
+        width: 100px;
+    }
+    .certification-img{
+        width: 70px;
+    }
+    .textCard{
+        font-size: 12px;
+    }
+}
