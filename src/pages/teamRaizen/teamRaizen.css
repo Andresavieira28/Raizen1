@@ -33,7 +33,7 @@
 
 .filters{
     margin-right: 4rem;
-    text-align: center;
+    text-align: right;
     background: var(--branco);
     color: var(--cinza-raizen);
     border: none;
@@ -71,14 +71,6 @@ a{
     /* border: 2px solid red; */
 }
 
-#total{
-    border: 2px solid yellow;
-    box-shadow: 0 1px 5px  var(--cinza-raizen);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    
-}
 
 #banner{
     width: 70%;
