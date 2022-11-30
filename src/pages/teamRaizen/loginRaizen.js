@@ -9,9 +9,11 @@ export default () => {
         <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
         <nav class='navDesktop'>
           <ul class='ulNavDesktop'>
-            <li><a href='#loginRaizen'> EQUIPE RAÍZEN </a></li>
-            <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
-            <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
+            <div class="liBoxDesktop">
+              <li><a href='#loginRaizen'> EQUIPE RAÍZEN </a></li>
+              <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
+              <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
+            </div>
           </ul>
         </nav>
         </header>
