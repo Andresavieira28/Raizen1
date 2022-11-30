@@ -6,10 +6,18 @@ export default () => {
     console.log(users);
     const container = document.createElement('div');
     const template = `
-      <header>
-        <p>header</p>
-        <a href="#loginRaizen">sair</a>
-      </header>
+    <header class="headerDesktop">
+      <div class="headerOut">
+        <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
+        <a id="out" href="#loginRaizen">SAIR</a>
+      </div>
+      <nav class='navDesktop'>
+        <ul class='ulNavDesktop'>
+          <li><a href='#teamRaizen'> EQUIPE RAÍZEN </a></li>
+          <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
+        </ul>
+      </nav>
+    </header>
     `;
     container.innerHTML = template;
 

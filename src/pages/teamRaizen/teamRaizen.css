@@ -1,32 +1,85 @@
-.loginRaizen{
-    height: 100vh;
-    width: 100%;
+
+
+.headerDesktop{
+    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* box-shadow: 0 1px 5px var(--cinza-raizen); */
+
+}
+
+.headerOut{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoLogin{
+    height: auto;
+    width: 10rem;
+    /* border: 2px solid red;  */
+    margin: 2.5rem 0 0 3.5rem;
+
+}
+
+#out{
+    color: var(--roxo-raizen);
+    margin: 4rem 4rem 0 0;
+}
+.ulNavDesktop{
+    border-top: 1px solid #66666685; 
+    border-bottom: 1px solid #66666685;  
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding: 1rem 3rem 1rem 4rem;
+}
+li a:hover{
+    color: var(--magenta-raizen);
+}
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--cinza-raizen);
+}
+
+.loginRaizen{
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
     /* border: 2px solid red; */
 }
 
 #total{
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     box-shadow: 0 1px 5px  var(--cinza-raizen);
     border-radius: 10px;
-}
-#logoLogin{
-    margin: 2rem 0 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
+#banner{
+    width: 70%;
+    height: auto;
+    margin-right: 0;
+}
 #form{
+
     display: flex;
     flex-direction: column;
     /* border: 2px solid blue; */
-    padding: 0 3rem 3rem 3rem ;
+    padding: 8rem 4rem 4rem 4rem;
     gap:1.5rem;
+    margin: 17rem 0 20rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px var(--cinza-raizen);
 
 }
-
-
 
 .inputLogin{
     width: 27.2rem;
