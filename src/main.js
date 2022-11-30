@@ -24,7 +24,6 @@ const routes = () => {
         break;
       default:
         main.appendChild(loginRaizen());
-
     }
   });
 };
