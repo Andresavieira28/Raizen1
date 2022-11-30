@@ -6,11 +6,11 @@ export default () => {
     const container = document.createElement('div');
     const template = `
       <header class="headerDesktop">
-        <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
+        <a href="https://www.raizen.com.br/"><img src='img/logoRaízen.png' id="logoLogin" alt="raizen"></a>
         <nav class='navDesktop'>
           <ul class='ulNavDesktop'>
             <div class="liBoxDesktop">
-              <li><a href='#loginRaizen'> EQUIPE RAÍZEN </a></li>
+              <li><a id="loadLoginRaizen" href='#loginRaizen'> EQUIPE RAÍZEN </a></li>
               <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
               <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
             </div>
@@ -33,7 +33,13 @@ export default () => {
     const inputPassword = container.querySelector('#inputPassword');
     const btn = container.querySelector('#btn');
     const error = container.querySelector('#error');
+    const loadLoginRaizen = container.querySelector('#loadLoginRaizen');
     let auth = false;
+
+    loadLoginRaizen.addEventListener('click', ()=> {
+      inputUser.value = inputPassword.value = "";
+      error.innerHTML = "";
+    })
 
     btn.addEventListener('click', ()=>{
       users.forEach(user => {
