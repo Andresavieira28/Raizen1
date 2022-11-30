@@ -12,6 +12,8 @@ export default () => {
     </section>
     <input type="text" placeholder="Digite seu CNPJ" id="input-cnpj"></input>
       <button id="btn-search" class="search-btn">Buscar por CNPJ</button>
+      <input onchange= "filterDateArray()" type="text" id="startDate" type= "date" value= "2021-08-2026">
+      <input onchange= "filterDateArray()" type="text" id="endDate" type= "date" value= "2021-08-30">
       <div id='query-template'> 
       </div>
     `;
@@ -51,3 +53,24 @@ function filterInfo(companies, cnpj,) {
     const arrayInfo = companies.filter((infos) => infos.cnpj === cnpj);
     return arrayInfo;
 }
+
+/*const startDate = document.getElementById("startDate")
+const endDate = document.getElementById("endDate")
+
+function filterDateArray(){
+    const dates = [
+        '2021-08-26',
+        '2021-08-27',
+        '2021-08-28',
+        '2021-08-29',
+        '2021-08-30',
+    ];
+
+    filteredDate= dates.filter(dateFilter);
+
+    function dateFilter(){
+        return datesFilter(date){
+            return date >=startDate.value && startDate <= endDate.value
+        }
+    }
+}*/

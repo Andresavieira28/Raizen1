@@ -10,6 +10,15 @@ export default {
             "data": "21/07/2019",
         },
         {
+            "cnpj": "24409413",
+            "empresa": "24.409.413/0001-92",
+            "lote": "121432",
+            "localização": "São Paulo",
+            "procedência": "Fazenda Curralinho",
+            "açúcar": "tipo 3",
+            "data": "26/07/2019",
+        },
+        {
             "cnpj": "35751872",
             "empresa": "35.751.872/0001-76",
             "lote": "131313",
