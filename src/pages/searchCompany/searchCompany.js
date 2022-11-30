@@ -51,5 +51,3 @@ function filterInfo(companies, cnpj,) {
     const arrayInfo = companies.filter((infos) => infos.cnpj === cnpj);
     return arrayInfo;
 }
-
-
