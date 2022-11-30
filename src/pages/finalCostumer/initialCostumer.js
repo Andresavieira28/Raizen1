@@ -82,6 +82,7 @@ function createCard(products) {
             </div>
          </section>`;
 
+
         return template;
     });
     return arrayProduct.join('');

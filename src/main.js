@@ -22,10 +22,12 @@ const routes = () => {
       case '#loginRaizen':
         main.appendChild(loginRaizen());
         break;
+      default:
+        main.appendChild(loginRaizen());
     }
   });
 };
 window.addEventListener('load', () => {
-
+  window.location.hash = '';
   routes();
 });

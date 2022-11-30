@@ -1,11 +1,8 @@
 
 
 .headerDesktop{
-    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: column;
-    /* box-shadow: 0 1px 5px var(--cinza-raizen); */
-
 }
 
 .headerOut{
@@ -16,18 +13,39 @@
 #logoLogin{
     height: auto;
     width: 10rem;
-    /* border: 2px solid red;  */
     margin: 2.5rem 0 0 3.5rem;
-
 }
 
 #out{
     color: var(--roxo-raizen);
     margin: 4rem 4rem 0 0;
 }
+#out:hover{
+    color: var(--magenta-raizen);
+}
 .ulNavDesktop{
     border-top: 1px solid var(--cor-borda-fina);
     border-bottom: 1px solid var(--cor-borda-fina);
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters{
+    margin-right: 4rem;
+    text-align: right;
+    background: var(--branco);
+    color: var(--cinza-raizen);
+    border: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.filters:hover{
+    color: var(--magenta-raizen);
+}
+
+.liBoxDesktop{
     display: flex;
 }
 
@@ -35,6 +53,7 @@ li{
     list-style-type: none;
     padding: 1rem 3rem 1rem 4rem;
 }
+
 li a:hover{
     color: var(--magenta-raizen);
 }
@@ -45,22 +64,9 @@ a{
 }
 
 .loginRaizen{
-    /* height: 100vh; */
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
-
-    /* border: 2px solid red; */
-}
-
-#total{
-    border: 2px solid yellow;
-    box-shadow: 0 1px 5px  var(--cinza-raizen);
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    
 }
 
 #banner{
@@ -68,17 +74,15 @@ a{
     height: auto;
     margin-right: 0;
 }
-#form{
 
+#form{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid blue; */
     padding: 8rem 4rem 4rem 4rem;
     gap:1.5rem;
     margin: 17rem 0 20rem 3rem;
     border-radius: 10px;
     box-shadow: 0 1px 5px var(--cinza-raizen);
-
 }
 
 .inputLogin{
@@ -103,38 +107,34 @@ a{
     text-align: center;
 }
 
-/* ------------------------------------------------ */
-
 #teamRaizen{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 7rem;
 }
-
-/* ------------------------------------------- */
 
 table{
     border-collapse: collapse;
     border: 1px solid var(--cor-borda-fina);
+    font-size: 1.3rem;
 }
 
 tbody,thead{
     text-align: center;   
 }
+
 thead{
     background-color: var(--roxo-raizen);
     color: var(--branco);
     font-weight: bold;
-
 }
 
 th, td {
     padding: 5px;
     border:  1px solid var(--cor-borda-fina);
+}
 
+#nulo{
+    color: var(--cinza-raizen);
 }
-/* thead>tr{
-    font-weight: bold;
-}
- */
