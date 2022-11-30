@@ -11,6 +11,7 @@ export default () => {
           <ul class='ulNavDesktop'>
             <li><a href='#loginRaizen'> EQUIPE RAÍZEN </a></li>
             <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
+            <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
           </ul>
         </nav>
         </header>
@@ -31,7 +32,6 @@ export default () => {
     const btn = container.querySelector('#btn');
     const error = container.querySelector('#error');
     let auth = false;
-    console.log(auth);
 
     btn.addEventListener('click', ()=>{
       users.forEach(user => {
@@ -41,7 +41,6 @@ export default () => {
       });
       auth ? window.location.hash = '#teamRaizen' : error.innerHTML = "Credenciais inválidas"
     });
-
 
     return container;
   };
