@@ -19,7 +19,7 @@ export default {
                 "area": "1",
                 "sustentabilidade": ["Controle de ruídos nas comunidades próximas as áreas de operações agrícolas","Controle de emissão de fumaça preta"],
                 "parque": "Diamante",
-                "cliente": "Coca-Cola"
+                "cliente": "Hersheys"
             },
             {
                 "num":"012385",
@@ -30,7 +30,7 @@ export default {
                 "area": "8",
                 "sustentabilidade": ["Controle de emissão de fumaça preta", "Redução das emissões de gases de efeito estufa"],
                 "parque": "Maracaí",
-                "cliente": "Coca-Cola"
+                "cliente": "Camil"
 
             },
             {
@@ -42,7 +42,7 @@ export default {
                 "area": "6",
                 "sustentabilidade": ["Controle de emissão de fumaça preta", "Redução das emissões de gases de efeito estufa"],
                 "parque": "Maracaí",
-                "cliente": "Coca-Cola"
+                "cliente": "Nescau"
             },
             {
                 "num":"012385",
@@ -53,7 +53,7 @@ export default {
                 "area": "5",
                 "sustentabilidade": ["Boa gestão de resíduos", "Diminuição no consumo de agroquímicos"],
                 "parque": "Maracaí",
-                "cliente": "Coca-Cola"
+                "cliente": "Nestlé"
             },
             {
                 "num":"753632",
@@ -64,7 +64,7 @@ export default {
                 "area": "5",
                 "sustentabilidade": ["Boa gestão de resíduos", "Diminuição no consumo de agroquímicos"],
                 "parque": "Maracaí",
-                "cliente": "Coca-Cola"
+                "cliente": "Hersheys"
             },
             {
                 "num":"112385",
@@ -86,7 +86,7 @@ export default {
                 "area": "11",
                 "sustentabilidade": ["Controle de ruídos nas comunidades próximas as áreas de operações agrícolas"],
                 "parque": "Serra",
-                "cliente": "Coca-Cola"
+                "cliente": "Camil"
             },
             {
                 "num":"012385",
@@ -97,7 +97,7 @@ export default {
                 "area": "2",
                 "sustentabilidade": ["Boa gestão de resíduos", "Redução do consumo de água e reução de geração de efluentes"],
                 "parque": "Serra",
-                "cliente": "Coca-Cola"
+                "cliente": "Hersheys"
             },
             {
                 "num":"134154",
@@ -108,7 +108,7 @@ export default {
                 "area": "3",
                 "sustentabilidade": ["Controle de emissão de fumaça preta", "Redução das emissões de gases de efeito estufa"],
                 "parque": "Maracaí",
-                "cliente": "Coca-Cola"
+                "cliente": "Nestlé"
             },
             {
                 "num":"178954",
@@ -119,7 +119,7 @@ export default {
                 "area": "7",
                 "sustentabilidade": ["Boa gestão de resíduos", "Diminuição no consumo de agroquímicos"],
                 "parque": "Maracaí",
-                "cliente": "Coca-Cola"
+                "cliente": "Camil"
             },
             {
                 "num":"148954",

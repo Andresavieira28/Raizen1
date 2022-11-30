@@ -2,7 +2,7 @@
 import data from '../../data/batch.js';
 
 export default () => {
-    const lots = data.lote;
+    const batch = data.lote;
     const container = document.createElement('div');
     const template = `
     <header class="headerDesktop">
@@ -14,7 +14,6 @@ export default () => {
         <ul class='ulNavDesktop'>
           <div class="liBoxDesktop">
             <li><a id="loadTeamRaizen" href='#teamRaizen'> EQUIPE RAÍZEN </a></li>
-            <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
           </div>
           <div class=selects">
             <select class="filters" id="unidade">
@@ -83,12 +82,12 @@ export default () => {
     print("todos", "todos", "todos");
 
     function print(uni,farm,cert){
-      const filterUni = uni==="todos" ? lots : lots.filter((key) => key.parque.includes(uni));
+      const filterUni = uni==="todos" ? batch : batch.filter((key) => key.parque.includes(uni));
       const filterFarm = farm==="todos" ? filterUni : filterUni.filter((key) => key.fazenda[0].includes(farm));
       const filterCert = cert==="todos" ? filterFarm : filterFarm.filter((key) => key.certificações.includes(cert));
       console.log(filterCert)
       if(filterCert.length===0){
-        container.querySelector('#nulo').innerHTML = "NADA";
+        container.querySelector('#nulo').innerHTML = "NENHUM DADO CORRESPONDENTE";
         headTable.innerHTML ="";
         bodyTable.innerHTML ="";
       }else{
