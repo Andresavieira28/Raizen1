@@ -46,6 +46,7 @@ function createCard(products) {
             <img class="product-img" src="${product.image}" alt="açúcar">
             <div class='textCard'><strong>Lote:</strong> ${product.lote}</div>
             <div class='textCard'><strong>Origem:</strong> ${product.origin}</div>
+            <div class='textCard'><strong>Atributos de sustentabilidade:</strong> ${product.sustainability}</div>
             <div class='textCard'><strong>Fazenda:</strong> ${product.farm}</div>
             <div class='textCard'><strong>Rastreabilidade:</strong> ${product.traceability}</div>
             <p><strong>Certificações:</strong></p>
