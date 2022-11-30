@@ -12,19 +12,20 @@ export default () => {
     </section>
     <input type="text" placeholder="Digite seu CNPJ" id="input-cnpj"></input>
       <button id="btn-search" class="search-btn">Buscar por CNPJ</button>
-      <input onchange= "filterDateArray()" type="text" id="startDate" type= "date" value= "2021-08-2026">
-      <input onchange= "filterDateArray()" type="text" id="endDate" type= "date" value= "2021-08-30">
+      <input type="text" placeholder="Digite sa data desejada" id="input-data"></input>
       <div id='query-template'> 
       </div>
     `;
 
     screen.innerHTML = templateScreen;
 
+    const inputData = screen.querySelector("#input-data");
     const btnSearch = screen.querySelector("#btn-search");
     const inputCnpj = screen.querySelector("#input-cnpj");
     const printElement = screen.querySelector('#query-template')
     btnSearch.addEventListener('click', () => {
-        const filterCnpj = filterInfo(companies, inputCnpj.value)
+        const filterResultData = filterData(companies, inputData.value)
+        const filterCnpj = filterInfo(filterResultData, inputCnpj.value)
         printElement.innerHTML = createCard(filterCnpj);
     })
 
@@ -53,24 +54,8 @@ function filterInfo(companies, cnpj,) {
     const arrayInfo = companies.filter((infos) => infos.cnpj === cnpj);
     return arrayInfo;
 }
-
-/*const startDate = document.getElementById("startDate")
-const endDate = document.getElementById("endDate")
-
-function filterDateArray(){
-    const dates = [
-        '2021-08-26',
-        '2021-08-27',
-        '2021-08-28',
-        '2021-08-29',
-        '2021-08-30',
-    ];
-
-    filteredDate= dates.filter(dateFilter);
-
-    function dateFilter(){
-        return datesFilter(date){
-            return date >=startDate.value && startDate <= endDate.value
-        }
-    }
-}*/
+ 
+function filterData(companies, data,) {
+    const arrayData = companies.filter((infos) => infos.data === data);
+    return arrayData;
+}
