@@ -57,26 +57,35 @@ function createCard(products) {
             </div>
             <div class='infoProducts'>
                 <div class='textCard'><strong>Lote:</strong> ${product.lote}</div>
-                <div class='textCard'><strong>Fazenda:</strong> ${product.farm}</div>
-                <div class='textCard'><strong>Fazenda:</strong> ${product.farm2}</div>
+                ${product.farms.map(farm => {
+                    return `<div class='textCard'><strong>Fazenda:</strong>${farm}</div>`;
+                }).join('')}
                 <section class='sectionsustainability'><strong>Atributos de sustentabilidade:</strong> 
-                    <div class='textCard'>${product.sustainability}</div>
-                    <div class='textCard'>${product.sustainability2}</div>
-                    <div class='textCard'>${product.sustainability3}</div>
+                    ${product.sustainability.map(element => {
+                        return `<div class='textCard'>${element}</div>`;
+                    }).join('')}
                 </section>
                 <p><strong>Certificações:</strong></p>
                 <section class='sectionCertification'>
-                    <div><img class="certification-img" src="${product.certification}" alt="Certificado"></div>
-                    <div><img class="certification-img" src="${product.certification2}" alt="Certificado"></div>
+                    ${product.certifications.map(certification => {
+                        return `
+                        <div>
+                            <img class="certification-img" src="${certification.image}" alt="Certificado">
+                            <p>${certification.description}</p>
+                        </div>
+                        `;
+                    }).join('')}
                 </section>
                 <p><strong>Rastreabilidade:</strong></p>
                 <section class='sectionOrigin'>
-                    <div class='textCard'><strong>Origem:</strong> ${product.origin}</div>
-                    <div class='textCard'><strong>Origem:</strong> ${product.origin2}</div>
+                    ${product.origins.map(origin => {
+                        return `<div class='textCard'><strong>Origem:</strong> ${origin}</div>`;
+                    }).join('')}
                 </section>
                 <section>
-                    <a href='${product.geolocation}' style="color:#781e77" target="blank"><span class="material-symbols-outlined" style="color:#781e77">location_on</span>Localização da origem do açucar</a>
-                    <a href='${product.geolocation2}' style="color:#781e77" target="blank"><span class="material-symbols-outlined" style="color:#781e77">location_on</span>Localização da origem do açucar</a>
+                    ${product.geolocation.map(geolocation => {
+                        return `<a href='${geolocation}' style="color:#781e77" target="blank"><span class="material-symbols-outlined" style="color:#781e77">location_on</span>Localização da origem do açucar</a>`
+                    }).join('')}
                 </section>
 
             </div>
