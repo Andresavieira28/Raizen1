@@ -40,16 +40,23 @@
 }
 .sectionCard{
     display: flex;
+    width: 100%;
     justify-content: space-around;
     margin: 2% 0% 2% 0%;
     font: var(--font-raizen);
     font-size: 16px;
 }
+
+.cardImage {
+    width: 50%;
+}
+
 .product-img{
     width: 300px;
 }
 .infoProducts{
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
 }
@@ -64,11 +71,22 @@
     align-items: center;
     flex-direction: row;
     padding: 1% 0% 1% 0%;
+    justify-content: center;
 }
 .sectionOrigin{
     margin-bottom: 2%;
 }
 .certification-img{
-    width: 80px;
+    width: 100%;
     padding: 5px;
+}
+.textCertification {
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.certificationCard {
+    width: 30%;
+    text-align: center;
 }

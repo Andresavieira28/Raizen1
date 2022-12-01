@@ -36,8 +36,19 @@ export default () => {
     const inputLote = initialPage.querySelector('#lote-sugar');
     const btnSearch = initialPage.querySelector('#btn-lote');
     btnSearch.addEventListener('click', () => {
-        const getLoteArray = getLote(products, inputLote.value)
+        const getLoteArray = getLote(products, inputLote.value);
         listLote.innerHTML = createCard(getLoteArray);
+
+        listLote.querySelectorAll('#certificationCard').forEach(card => {
+            const description = card.querySelector('#textCertification');
+            card.addEventListener('mouseenter', () => {
+                description.style.display = "block";
+            });
+
+            card.addEventListener('mouseleave', () => {
+                description.style.display = "none";
+            });
+         });    
     });
 
     return initialPage;
@@ -52,13 +63,13 @@ function createCard(products) {
     const arrayProduct = products.map((product) => {
         const template = `
          <section class='sectionCard'>
-            <div>
+            <div class="cardImage">
                 <img class="product-img" src="${product.image}" alt="açúcar">
             </div>
             <div class='infoProducts'>
                 <div class='textCard'><strong>Lote:</strong> ${product.lote}</div>
                 ${product.farms.map(farm => {
-                    return `<div class='textCard'><strong>Fazenda:</strong>${farm}</div>`;
+                    return `<div class='textCard'><strong>Fazenda: </strong>${farm}</div>`;
                 }).join('')}
                 <section class='sectionsustainability'><strong>Atributos de sustentabilidade:</strong> 
                     ${product.sustainability.map(element => {
@@ -69,9 +80,9 @@ function createCard(products) {
                 <section class='sectionCertification'>
                     ${product.certifications.map(certification => {
                         return `
-                        <div>
-                            <img class="certification-img" src="${certification.image}" alt="Certificado">
-                            <p>${certification.description}</p>
+                        <div id="certificationCard" class="certificationCard">
+                            <img id="certification-img" class="certification-img" src="${certification.image}" alt="Certificado">
+                            <p id="textCertification" class="textCertification">${certification.description}</p>
                         </div>
                         `;
                     }).join('')}
@@ -90,8 +101,6 @@ function createCard(products) {
 
             </div>
          </section>`;
-
-
         return template;
     });
     return arrayProduct.join('');
