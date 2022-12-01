@@ -6,16 +6,15 @@ export default () => {
     const initialPage = document.createElement('section');
     const templateLote = `
     <header class="headerDesktop">
-      <div class="headerOut">
-        <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
-        <a id="out" href="#loginRaizen">SAIR</a>
-      </div>
-      <nav class='navDesktop'>
+        <a href="https://www.raizen.com.br/"><img src='img/logoRaízen.png' id="logoLogin" alt="raizen"></a>
+        <nav class='navDesktop'>
         <ul class='ulNavDesktop'>
-          <li><a href='#teamRaizen'> EQUIPE RAÍZEN </a></li>
-          <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
+            <div class="liBoxDesktop">
+            <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
+            <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
+            </div>
         </ul>
-      </nav>
+        </nav>
     </header>
     <section class='imgBoasvindas'>
         <p class='textoBoasVindas'>Somos uma empresa integrada referência global em bioenergia e com amplo portfólio de produtos renováveis.</p>
@@ -40,13 +39,13 @@ export default () => {
         listLote.innerHTML = createCard(getLoteArray);
 
         listLote.querySelectorAll('#certificationCard').forEach(card => {
-            const description = card.querySelector('#textCertification');
+            const descriptionCertification = card.querySelector('#textCertification');
             card.addEventListener('mouseenter', () => {
-                description.style.display = "block";
+                descriptionCertification.style.display = "flex";
             });
 
             card.addEventListener('mouseleave', () => {
-                description.style.display = "none";
+                descriptionCertification.style.display = "none";
             });
          });    
     });
