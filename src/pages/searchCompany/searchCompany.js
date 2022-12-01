@@ -5,20 +5,24 @@ const companies = data.infos;
 export default () => {
     const screen = document.createElement('section');
     const templateScreen = `
-    <section>
-    <header class="headerDesktop">
-      <div class="headerOut">
-        <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
-      </div>
-      <nav class='navDesktop'>
-        <ul class='ulNavDesktop'>
-          <div class="liBoxDesktop">
-          <input type="text" placeholder="Digite seu CNPJ" id="input-cnpj"></input>
-          <input type="text" placeholder="Digite mês e ano 02/2012" id="input-data"></input>
-          <button id="btn-search" class="search-btn">Buscar por CNPJ</button>
-          <li><a href='#loginRaizen'> INÍCIO </a></li>
-          <li><a href='#teamRaizen'> EQUIPE RAÍZEN </a></li>
-        </header>
+        <section>
+            <header class="headerDesktop">
+                <div class="headerOut">
+                    <a href="https://www.raizen.com.br/"><img src='img/logoRaízen.png' id="logoLogin" alt="raizen"></a>
+                </div>
+                <nav class='navDesktop'>
+                    <ul class='ulNavDesktop'>
+                      <div class="liBoxDesktop">
+                        <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
+                        <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
+                      </div>
+                      <div >
+                        <input type="text" placeholder="Digite seu CNPJ" id="input-cnpj"></input>
+                        <input type="text" placeholder="Digite mês e ano 02/2012" id="input-data"></input>
+                        <button id="btn-search" class="search-btn">Buscar por CNPJ</button>  
+                      </div>
+                    </ul>
+            </header>
         <div id="query-template">
         </div>
     </section>

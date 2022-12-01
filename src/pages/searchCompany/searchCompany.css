@@ -33,33 +33,33 @@
 }
 
 #input-cnpj {
-    padding: 15px;
-    width: 15rem;
-    height: 1rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
     border-radius: 10px;
-    margin-right: 5px;
+    margin: 1rem 4rem 1rem 0;
+
 }
 
 
 #input-data {
-    width: 12rem;
-    height: 2rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
     border-radius: 10px;
     padding: 7px;
+    margin: 1rem 4rem 1rem 0;
 }
 
 #btn-search {
-    height: 3rem;
-    width: 9rem;
-    font-size: 1rem;
-    background-color: #ea368e;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: var(--magenta-raizen);
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    color: #fff;
-    margin-left: 5px;
+    color: var(--branco);
+    margin: 1rem 4rem 1rem 0;
+    font-weight: bold;
+    
 }
 
 li {
