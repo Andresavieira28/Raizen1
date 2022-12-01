@@ -1,0 +1,114 @@
+
+.imgBoasvindas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../img/plantio.png);
+    padding: 4% 0% 2% 0%;
+    margin-bottom: 2%;
+}
+.textoBoasVindas{
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+}
+.info-lote{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.input-lote{
+    border-color: var(--roxo-raizen);
+    font-size: 15px;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+.btn-search-lote{
+    background:var(--roxo-raizen);
+    font-size: 15px;
+    color: var(--branco);
+    border-radius: 10px;
+    border-color: var(--roxo-raizen);
+    width: 20%;
+    height: 50px;
+}
+.btn-search-lote:hover{
+    transform: scale(0.9);
+}
+.sectionCard{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2% 0% 2% 0%;
+    font: var(--font-raizen);
+    font-size: 16px;
+}
+
+.cardImage {
+    width: 50%;
+}
+
+.product-img{
+    width: 300px;
+}
+.infoProducts{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionsustainability{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 0% 1% 0%;
+}
+.sectionCertification{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1% 0% 1% 0%;
+    justify-content: center;
+}
+.sectionOrigin{
+    margin-bottom: 2%;
+}
+.certification-img{
+    width: 100%;
+    padding: 15px;
+}
+.textCertification {
+    display: none;
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    z-index: 6;
+    overflow: auto;
+    background-color: var(--roxo-raizen);
+    color: var(--branco);
+    border-radius: 5px;
+    padding: 5px;
+    bottom: 15%;
+}
+.certificationCard {
+    width: 30%;
+    text-align: center;
+}
+
+/*
+.textCertification {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    width: 20%;
+    height: 20%;
+    overflow: auto;
+    background-color: var(--roxo-raizen);
+    color: var(--branco);
+}
+*/

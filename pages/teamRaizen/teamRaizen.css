@@ -1,0 +1,143 @@
+
+
+.headerDesktop{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerOut{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoLogin{
+    height: auto;
+    width: 10rem;
+    margin: 2.5rem 0 0 3.5rem;
+}
+
+#out{
+    color: var(--roxo-raizen);
+    margin: 4rem 4rem 0 0;
+}
+#out:hover{
+    color: var(--magenta-raizen);
+}
+.ulNavDesktop{
+    border-top: 1px solid var(--cor-borda-fina);
+    border-bottom: 1px solid var(--cor-borda-fina);
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters{
+    margin-right: 4rem;
+    text-align: right;
+    background: var(--branco);
+    color: var(--cinza-raizen);
+    border: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.filters:hover{
+    color: var(--magenta-raizen);
+}
+
+.liBoxDesktop{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding: 1rem 3rem 1rem 4rem;
+}
+
+li a:hover{
+    color: var(--magenta-raizen);
+}
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--cinza-raizen);
+}
+
+.loginRaizen{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner{
+    width: 70%;
+    height: auto;
+    margin-right: 0;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 4rem 4rem 4rem;
+    gap:1.5rem;
+    margin: 17rem 0 20rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px var(--cinza-raizen);
+}
+
+.inputLogin{
+    width: 27.2rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+#btn{
+    height: 5rem;
+    width: 27.3rem;
+    background:var(--magenta-raizen);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+#error{
+    font-size: 1.5rem ;
+    color: var(--magenta-raizen);
+    text-align: center;
+}
+
+#teamRaizen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid var(--cor-borda-fina);
+    font-size: 1.3rem;
+}
+
+tbody,thead{
+    text-align: center;   
+}
+
+thead{
+    background-color: var(--roxo-raizen);
+    color: var(--branco);
+    font-weight: bold;
+}
+
+th, td {
+    padding: 5px;
+    border:  1px solid var(--cor-borda-fina);
+}
+
+#nulo{
+    color: var(--cinza-raizen);
+}
+thead td {
+    color: var(--branco);
+}
