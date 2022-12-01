@@ -10,7 +10,8 @@ export default {
         "certifications": [
             {
                 "image": "https://bonsucro.com/wp-content/themes/bonsucro/images/logo.jpg",
-                "description": "A Bonsucro oferece um processo de certificação métrico confiável para demonstrar o compromisso com a sustentabilidade ambiental e social da cana-de-açúcar. O certificado Bonsucro é reconhecido e respeitado internacionalmente."
+                "description": "Certificação internacional que assegura padrões de produção de acordo com as leis judaicas de alimentação (Kashrut)"
+
             },
             {
                 "image": "https://s3-sa-east-1.amazonaws.com/raizen-prod/items-images/item-437-item-327-item-159-item-42-iso-17025-2.png",
