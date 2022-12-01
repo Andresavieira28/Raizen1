@@ -10,7 +10,7 @@ export default {
         "certifications": [
             {
                 "image": "https://bonsucro.com/wp-content/themes/bonsucro/images/logo.jpg",
-                "description": "Descricao do meu certificado"
+                "description": "Certificação internacional que assegura padrões de produção de acordo com as leis judaicas de alimentação (Kashrut)"
             },
             {
                 "image": "https://s3-sa-east-1.amazonaws.com/raizen-prod/items-images/item-437-item-327-item-159-item-42-iso-17025-2.png",
