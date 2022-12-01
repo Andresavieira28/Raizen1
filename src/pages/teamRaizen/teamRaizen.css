@@ -138,3 +138,6 @@ th, td {
 #nulo{
     color: var(--cinza-raizen);
 }
+thead td {
+    color: var(--branco);
+}
