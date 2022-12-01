@@ -24,7 +24,7 @@ export default () => {
         <input class="input-lote" id="lote-sugar" type="text" placeholder="Digite o número do Lote">
         <button class="btn-search-lote" id="btn-lote">Pesquisar</button>
     </section>
-    <section>
+    <section class='bodyLote'>
         <div id='printLote'></div>
     </section>`;
 
@@ -92,7 +92,7 @@ function createCard(products) {
                         return `<div class='textCard'><strong>Origem:</strong> ${origin}</div>`;
                     }).join('')}
                 </section>
-                <section>
+                <section class="linkGeolocation">
                     ${product.geolocation.map(geolocation => {
                         return `<a href='${geolocation}' style="color:#781e77" target="blank"><span class="material-symbols-outlined" style="color:#781e77">location_on</span>Localização da origem do açucar</a>`
                     }).join('')}
