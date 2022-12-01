@@ -78,15 +78,37 @@
 }
 .certification-img{
     width: 100%;
-    padding: 5px;
+    padding: 15px;
 }
 .textCertification {
     display: none;
-    z-index: 1;
     position: absolute;
+    text-align: center;
+    flex-direction: column;
+    z-index: 6;
+    overflow: auto;
+    background-color: var(--roxo-raizen);
+    color: var(--branco);
+    border-radius: 5px;
+    padding: 5px;
+    bottom: 15%;
 }
-
 .certificationCard {
     width: 30%;
     text-align: center;
 }
+
+/*
+.textCertification {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    width: 20%;
+    height: 20%;
+    overflow: auto;
+    background-color: var(--roxo-raizen);
+    color: var(--branco);
+}
+*/

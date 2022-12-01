@@ -1,4 +1,4 @@
-# Raizen1
+# Desafio Talent Fest - Squad 1 - Raizen
 
 ## Índice
 
@@ -23,14 +23,14 @@ Considerando o processo de açúcar, com uma produção simplificada de um produ
 
 Nossa paleta de cores foi definida baseada na identidade visual da Raízen:
 
-![Paleta de cores](src/images/image.png)
+![Paleta de cores](src/img/PaletadeCores.PNG)
 
 
 ## 3. Protótipo da interface
 
 Nossos protótipos foram desenvolvidos utilizando a ferramenta Figma:
 
-![Prototipo de alta](src/images/image.png)
+![Prototipo de alta](src/img/PrototipoAlta.PNG)
 
 
 ## 4. Planejamento e Organização
