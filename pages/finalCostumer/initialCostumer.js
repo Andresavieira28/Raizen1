@@ -10,8 +10,8 @@ export default () => {
         <nav class='navDesktop'>
         <ul class='ulNavDesktop'>
             <div class="liBoxDesktop">
-            <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
-            <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
+              <li><a href='#searchCompany'>GRANDES CLIENTES</a></li>
+              <li><a id="out" href="#loginRaizen">SAIR</a></li>
             </div>
         </ul>
         </nav>
@@ -23,6 +23,7 @@ export default () => {
     <section class="info-lote">
         <input class="input-lote" id="lote-sugar" type="text" placeholder="Digite o número do Lote">
         <button class="btn-search-lote" id="btn-lote">Pesquisar</button>
+        <button class="btn-search-lote " id="btn-list-all" style="margin-left: 10px;">Listar Todos</button>
     </section>
     <section class='bodyLote'>
         <div id='printLote'></div>
@@ -30,13 +31,13 @@ export default () => {
 
     initialPage.innerHTML = templateLote;
 
-
     const listLote = initialPage.querySelector('#printLote');
     const inputLote = initialPage.querySelector('#lote-sugar');
     const btnSearch = initialPage.querySelector('#btn-lote');
-    btnSearch.addEventListener('click', () => {
-        const getLoteArray = getLote(products, inputLote.value);
-        listLote.innerHTML = createCard(getLoteArray);
+    const btnListAll = initialPage.querySelector('#btn-list-all');
+
+    function renderProducts(productsToRender) {
+        listLote.innerHTML = createCard(productsToRender);
 
         listLote.querySelectorAll('#certificationCard').forEach(card => {
             const descriptionCertification = card.querySelector('#textCertification');
@@ -47,8 +48,30 @@ export default () => {
             card.addEventListener('mouseleave', () => {
                 descriptionCertification.style.display = "none";
             });
-         });    
+        });
+    }
+
+    btnSearch.addEventListener('click', () => {
+        const loteValue = inputLote.value.trim();
+        if (loteValue === '') {
+            alert('Por favor, digite um número de lote para pesquisar.');
+            return;
+        }
+        const getLoteArray = getLote(products, loteValue);
+        if (getLoteArray.length === 0) {
+            listLote.innerHTML = `<p>Nenhum produto encontrado para o lote "${loteValue}".</p>`;
+        } else {
+            renderProducts(getLoteArray);
+        }
     });
+
+    btnListAll.addEventListener('click', () => {
+        inputLote.value = '';  // limpa o input ao listar todos
+        renderProducts(products);
+    });
+
+    // Opcional: não mostrar nada no início, ou mostrar uma mensagem inicial
+    listLote.innerHTML = `<p>Use o botão "Listar Todos" para ver todos os produtos, ou pesquise pelo lote.</p>`;
 
     return initialPage;
 }
@@ -70,7 +93,7 @@ function createCard(products) {
                 ${product.farms.map(farm => {
                     return `<div class='textCard'><strong>Fazenda: </strong>${farm}</div>`;
                 }).join('')}
-                <section class='sectionsustainability'><strong>Atributos de sustentabilidade:</strong> 
+                <section class='sectionsustainability'><strong>Atributos de sustentabilidade:</strong>
                     ${product.sustainability.map(element => {
                         return `<div class='textCard'>${element}</div>`;
                     }).join('')}
@@ -81,23 +104,22 @@ function createCard(products) {
                         return `
                         <div id="certificationCard" class="certificationCard">
                             <img id="certification-img" class="certification-img" src="${certification.image}" alt="Certificado">
-                            <p id="textCertification" class="textCertification">${certification.description}</p>
+                            <p id="textCertification" class="textCertification" style="display:none;">${certification.description}</p>
                         </div>
                         `;
                     }).join('')}
                 </section>
                 <p><strong>Rastreabilidade:</strong></p>
                 <section class='sectionOrigin'>
-                    ${product.origins.map(origin => {
+                    ${product.traceability.map(origin => {
                         return `<div class='textCard'><strong>Origem:</strong> ${origin}</div>`;
                     }).join('')}
                 </section>
                 <section class="linkGeolocation">
                     ${product.geolocation.map(geolocation => {
-                        return `<a href='${geolocation}' style="color:#781e77" target="blank"><span class="material-symbols-outlined" style="color:#781e77">location_on</span>Localização da origem do açucar</a>`
+                        return `<a href='${geolocation}' style="color:#781e77" target="_blank"><span class="material-symbols-outlined" style="color:#781e77">location_on</span>Localização da origem do açúcar</a>`
                     }).join('')}
                 </section>
-
             </div>
          </section>`;
         return template;
