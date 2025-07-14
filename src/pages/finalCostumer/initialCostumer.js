@@ -8,12 +8,12 @@ export default () => {
     <header class="headerDesktop">
         <a href="https://www.raizen.com.br/"><img src='img/logoRaízen.png' id="logoLogin" alt="raizen"></a>
         <nav class='navDesktop'>
-        <ul class='ulNavDesktop'>
-            <div class="liBoxDesktop">
-              <li><a href='#searchCompany'>GRANDES CLIENTES</a></li>
-              <li><a id="out" href="#loginRaizen">SAIR</a></li>
-            </div>
-        </ul>
+          <ul class='ulNav-initial'>
+              <div class="ul-initial">
+                <li><a href='#searchCompany'>GRANDES CLIENTES</a></li>
+                <li><a id="out" href="#loginRaizen">SAIR</a></li>
+              </div>
+          </ul>
         </nav>
     </header>
     <section class='imgBoasvindas'>

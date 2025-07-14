@@ -1,0 +1,68 @@
+.loginRaizen {
+  width: 100%;
+  height: 100vh; /* Altura da tela inteira */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* Evita quebra entre form e imagem */
+  gap: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 0 0 30px
+}
+
+.loginFormSection {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px var(--cinza-raizen);
+}
+
+.inputLogin {
+  width: 15.2rem;
+  height: 2.0rem;
+  text-align: center;
+  font-size: 1.0rem;
+  border-radius: 10px;
+}
+
+#btn {
+  width: 10.2rem;
+  height: 2.0rem;
+  font-size: 1.0rem;
+  background: var(--magenta-raizen);
+  color: var(--branco);
+  cursor: pointer;
+}
+
+#error {
+  font-size: 1.5rem;
+  color: var(--magenta-raizen);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.bannerSection {
+  flex: 1.2; /* pode ajustar para controlar a proporção com o formulário */
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
