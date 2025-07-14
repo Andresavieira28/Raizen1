@@ -1,5 +1,4 @@
-
-.imgBoasvindas{
+.imgBoasvindas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,85 +6,131 @@
     padding: 4% 0% 2% 0%;
     margin-bottom: 2%;
 }
-.textoBoasVindas{
+
+.textoBoasVindas {
     color: var(--branco);
     font-size: 20px;
     text-align: center;
 }
-.info-lote{
+
+.ulNavDesktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.liBoxDesktop {
+    display: flex;
+    align-items: center;
+}
+
+.info-lote {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem; /* Espaço entre input e botões */
 }
-.input-lote{
+
+.input-lote {
     border-color: var(--roxo-raizen);
     font-size: 15px;
     width: 20%;
     height: 50px;
     text-align: center;
     border-radius: 10px;
-    margin-right: 3%;
+    margin-right: 0; /* margin removida, usaremos gap no container */
 }
-.btn-search-lote{
-    background:var(--roxo-raizen);
+
+.btn-search-lote {
+    background: var(--roxo-raizen);
     font-size: 15px;
     color: var(--branco);
     border-radius: 10px;
     border-color: var(--roxo-raizen);
     width: 20%;
     height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
 }
-.btn-search-lote:hover{
+
+.btn-search-lote:hover {
     transform: scale(0.9);
 }
-.bodyLote{
+
+.bodyLote {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
+    width: 100%;
+}
 
-
-}
-.sectionCard{
+#printLote {
     display: flex;
-    width: 80%;
-    justify-content: space-around;
-    /* margin: 2% 0% 2% 0%; */
-    font: var(--font-raizen);
-    font-size: 16px;
-}
-.cardImage {
-    width: 50%;
-    text-align: center;
-}
-.product-img{
-    width: 80%;
-}
-.infoProducts{
-    display: flex;
-    width: 50%;
     flex-direction: column;
     align-items: center;
+    gap: 2rem; /* Espaçamento vertical entre os cards */
+    width: 80%; /* Ajuste da largura do container dos produtos */
 }
-.sectionsustainability{
+
+.sectionCard {
+    display: flex;
+    width: 100%; /* ocupa toda a largura do container */
+    justify-content: flex-start;
+    gap: 2rem;
+    font: var(--font-raizen);
+    font-size: 16px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.cardImage {
+    width: 40%;
+    text-align: center;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.infoProducts {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sectionsustainability {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 1% 0% 1% 0%;
 }
-.sectionCertification{
+
+.sectionCertification {
     display: flex;
     align-items: center;
     flex-direction: row;
     padding: 1% 0% 1% 0%;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-.sectionOrigin{
+
+.sectionOrigin {
     margin-bottom: 2%;
 }
-.certification-img{
+
+.certification-img {
     width: 100%;
     padding: 15px;
 }
+
 .textCertification {
     display: none;
     position: absolute;
@@ -99,17 +144,14 @@
     padding: 5px;
     bottom: 5%;
 }
+
 .certificationCard {
     width: 30%;
     text-align: center;
-}
-.linkGeolocation{
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
-#printLote{
+.linkGeolocation {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }

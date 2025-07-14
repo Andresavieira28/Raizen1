@@ -13,14 +13,18 @@ export default () => {
                 <nav class='navDesktop'>
                     <ul class='ulNavDesktop'>
                       <div class="liBoxDesktop">
-                        <li><a href='#searchCompany'> GRANDES CLIENTES </a></li>
-                        <li><a href='#initialCostumer'> RASTREIE SEU PRODUTO </a></li>
+                        <li>
+                          <a href='#initialCostumer'> RASTREIE SEU PRODUTO </a>
+
+                        </li>
                       </div>
                       <div >
                         <input type="text" placeholder="Digite seu CNPJ" id="input-cnpj"></input>
                         <input type="text" placeholder="Digite mês e ano 02/2012" id="input-data"></input>
-                        <button id="btn-search" class="search-btn">Buscar por CNPJ</button>  
-                      </div>
+                        <button id="btn-search" class="search-btn">Buscar por CNPJ</button>
+                        <button id="btn-all" class="btn-listartodos">Listar Todos os clientes</button>
+                        <a id="out" href="#loginRaizen">SAIR</a>
+                        </div>
                     </ul>
             </header>
         <div id="query-template">
@@ -31,6 +35,12 @@ export default () => {
 
     const inputData = screen.querySelector("#input-data");
     const btnSearch = screen.querySelector("#btn-search");
+
+    const btnAll = screen.querySelector("#btn-all");
+    btnAll.addEventListener('click', () => {
+        printElement.innerHTML = createCard(companies);
+    });
+
     const inputCnpj = screen.querySelector("#input-cnpj");
     const printElement = screen.querySelector('#query-template')
     btnSearch.addEventListener('click', () => {
@@ -48,27 +58,29 @@ export default () => {
 function createCard(filterCnpj) {
     const companiesArray = filterCnpj.map((infos) => {
         const template = `
-         <section>
          <section class="table">
-            <table>
-            <tr>
-                <td><strong>CNPJ:</strong></td>
-                <td><strong>Lote:</strong></td>
-                <td><strong>Localização:</strong></td>
-                <td><strong>Procedência:</strong></td>
-                <td><strong>Tipo de Açúcar:</strong></td>
-                <td><strong>Data de Venda:</strong></td>
+            <table class="styled-table">
+              <thead>
+                <tr>
+                    <th>CNPJ</th>
+                    <th>Lote</th>
+                    <th>Localização</th>
+                    <th>Procedência</th>
+                    <th>Tipo de Açúcar</th>
+                    <th>Data de Venda</th>
                 </tr>
-            <tr>
-                <td>${infos.empresa}</td>
-                <td>${infos.lote}</td>
-                <td>${infos.localização}</td>
-                <td>${infos.procedência}</td>
-                <td>${infos.açúcar}</td>
-                <td>${infos.data}</td>
-            </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>${infos.empresa}</td>
+                    <td>${infos.lote}</td>
+                    <td>${infos.localização}</td>
+                    <td>${infos.procedência}</td>
+                    <td>${infos.açúcar}</td>
+                    <td>${infos.data}</td>
+                </tr>
+              </tbody>
             </table>
-            </section>
          </section>
      `;
         return template;

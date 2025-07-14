@@ -1,10 +1,6 @@
 export default {
     "users":[{
-        "user": "cs250993",
-        "password": "raizen22"
-    },
-    {
-        "user": "cs120293",
-        "password": "raizen22"
+        "user": "user",
+        "password": "raizen"
     }
 ]};
