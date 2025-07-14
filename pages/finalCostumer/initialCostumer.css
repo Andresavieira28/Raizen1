@@ -13,17 +13,19 @@
     text-align: center;
 }
 
-.ulNavDesktop{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+.ulNav-initial {
+    border-top: 1px solid var(--cor-borda-fina);
+    border-bottom: 1px solid var(--cor-borda-fina);
+
+
 }
 
-.liBoxDesktop {
+.ul-initial {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 
 .info-lote {
     display: flex;

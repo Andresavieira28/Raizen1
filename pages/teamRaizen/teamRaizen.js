@@ -77,7 +77,7 @@ export default () => {
 
   loadTeamRaizen.addEventListener('click', () => {
     selectUni.value = selectFarm.value = selectCert.value = "todos";
-    print(selectUni.value, selectFarm.value, selectCert.value);
+    print("todos", "todos", "todos");
   });
 
   // Inicializa tabela com todos os dados
@@ -95,16 +95,16 @@ export default () => {
     } else {
       container.querySelector('#nulo').innerHTML = "";
       headTable.innerHTML = `
-        <td>LOTE</td>
-        <td>DATA LOTE</td>
-        <td>CÓDIGO FAZENDA</td>
-        <td>NOME FAZENDA</td>
-        <td>ÁREA</td>
-        <td>PARQUE DE BIOENERGIA</td>
-        <td>UNI (MIL)</td>
-        <td>DATA VENDA</td>
-        <td>CERTIFICAÇÕES</td>
-        <td>CLIENTE</td>
+        <th>LOTE</th>
+        <th>DATA LOTE</th>
+        <th>CÓDIGO FAZENDA</th>
+        <th>NOME FAZENDA</th>
+        <th>ÁREA</th>
+        <th>PARQUE DE BIOENERGIA</th>
+        <th>UNI (MIL)</th>
+        <th>DATA VENDA</th>
+        <th>CERTIFICAÇÕES</th>
+        <th>CLIENTE</th>
       `;
 
       bodyTable.innerHTML = filterCert.map((key) => `
