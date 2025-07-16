@@ -31,14 +31,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem; /* Espaço entre input e botões */
+    gap: 0.5rem; /* Espaço entre input e botões */
 }
 
 .input-lote {
     border-color: var(--roxo-raizen);
     font-size: 15px;
-    width: 20%;
-    height: 50px;
+    width: 15%;
+    height: 40px;
     text-align: center;
     border-radius: 10px;
     margin-right: 0; /* margin removida, usaremos gap no container */
@@ -50,8 +50,8 @@
     color: var(--branco);
     border-radius: 10px;
     border-color: var(--roxo-raizen);
-    width: 20%;
-    height: 50px;
+    width: 10%;
+    height: 40px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
@@ -63,7 +63,8 @@
 .bodyLote {
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
     width: 100%;
 }
 
@@ -77,11 +78,11 @@
 
 .sectionCard {
     display: flex;
-    width: 100%; /* ocupa toda a largura do container */
+    width: 80%; /* ocupa toda a largura do container */
     justify-content: flex-start;
     gap: 2rem;
     font: var(--font-raizen);
-    font-size: 16px;
+    font-size: 12px;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -95,7 +96,7 @@
 }
 
 .product-img {
-    width: 100%;
+    width: 80%;
     border-radius: 8px;
     object-fit: cover;
 }

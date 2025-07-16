@@ -1,28 +1,6 @@
 
 
-.headerDesktop{
-    display: flex;
-    flex-direction: column;
-}
 
-.headerOut{
-    display: flex;
-    justify-content: space-between;
-}
-
-#logoLogin{
-    height: auto;
-    width: 10rem;
-    margin: 2.5rem 0 0 3.5rem;
-}
-
-#out{
-    color: var(--roxo-raizen);
-    margin: 4rem 4rem 0 0;
-}
-#out:hover{
-    color: var(--magenta-raizen);
-}
 .ulNavDesktop{
     border-top: 1px solid var(--cor-borda-fina);
     border-bottom: 1px solid var(--cor-borda-fina);
@@ -31,12 +9,12 @@
 }
 
 .filters{
-    margin-right: 4rem;
+    margin-right: 2rem;
     text-align: center;
     background: var(--branco);
     color: var(--cinza-raizen);
     border: none;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     padding: 1rem;
     cursor: pointer;
 }
@@ -46,10 +24,10 @@
 }
 
 option{
-    width: 80%;
+    width: 60%;
     background: var(--branco);
     color: var(--cinza-raizen);
-    font-size: 1.3rem;
+    font-size: 0.8rem;
 }
 
 .liBoxDesktop{
@@ -66,7 +44,7 @@ li a:hover{
 }
 a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     color: var(--cinza-raizen);
 }
 
@@ -74,7 +52,7 @@ a{
 table{
     border-collapse: collapse;
     border: 1px solid var(--cor-borda-fina);
-    font-size: 1.3rem;
+    font-size: 0.9rem;
 }
 
 tbody,thead{
@@ -88,7 +66,7 @@ thead{
 }
 
 th, td {
-    padding: 5px;
+    padding: 3px;
     border:  1px solid var(--cor-borda-fina);
 }
 
@@ -102,7 +80,7 @@ thead td {
 thead th {
   background-color: var(--roxo-raizen); /* ou qualquer cor de fundo */
   color: var(--branco); /* cor branca para o texto */
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -110,5 +88,6 @@ thead th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
 }
