@@ -7,7 +7,7 @@ export default () => {
   const template = `
     <header class="headerDesktop">
       <a href="https://www.raizen.com.br/">
-        <img src="/img/logoRaízen.png" id="logoLogin" alt="Logotipo da Raízen">
+        <img src='img/logoRaízen.png' id="logoLogin" alt="raizen">
       </a>
       <nav class="navDesktop">
         <ul class="ulNavDesktop">
@@ -27,7 +27,7 @@ export default () => {
       </section>
 
       <section class="bannerSection">
-        <img id="banner" src="/img/lavoura.jpg" alt="Imagem de lavoura" />
+        <img src='img/lavoura.jpg' id="banner" alt="Imagem de lavoura" />
       </section>
     </main>
 
